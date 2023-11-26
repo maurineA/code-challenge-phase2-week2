@@ -1,29 +1,28 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .bot {
   font-family: 'Roboto';
-  font-weight: 100;
-  font-size: 12px;
-  padding-top: 10px;
-  line-height: 2;
+  text-align: center;
+  font-weight: 500px;
+  font-size: 18px;
+  padding-top: 5px;
+  line-height: 3;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Roboto'
 }
 
 .heading {
-  font-family: '';
-  font-size: 36px;
-  font-weight: 500;
+  font-family: 'Roboto';
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
   line-height: 1;
 }
 
@@ -32,16 +31,16 @@ code {
   max-width: 300px;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 1px 2px 8px rgba(87, 86, 86, 0.1);
-  background-color: #FEEFDE;
+  box-shadow: 1px 2px 8px rgba(221, 175, 175, 0.1);
+  background-color: #d3a36d;
   padding-bottom: 10px;
  
 }
 
 
 .card-wrapper {
-  padding: 2%;
-  columns: 5;
+  padding: 3%;
+  columns: 4;
 
 }
 
@@ -55,7 +54,7 @@ code {
 
 
 .image-wrapper {
-  background-color: rgb(95, 94, 94);
+  background-color: rgb(161, 177, 152);
   height: 300px;
   width: auto;
   overflow: hidden;
@@ -71,7 +70,7 @@ img {
 
 
 button{
-  background-color: red;
+  background-color: rgb(71, 5, 5);
   color: white;
   border: none;
   border-radius: 3px;
