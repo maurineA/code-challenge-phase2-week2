@@ -19,7 +19,7 @@ function App() {
   }, [])
 
 
-  function handleDisplayInfo(id) {
+  function handleDisplayBotInfo(id) {
     setSelectedBot(() => allBots.find(b => b.id === id))
   }
 
@@ -32,7 +32,7 @@ function App() {
     setSelectedBot(null)
   }
 
-  function handleDelete(id) {
+  function handleRetire(id) {
     fetch(`http://localhost:30001/bots/${id}`, { method: "DELETE" })
       .then(r => r.json())
       .then(() => {
@@ -42,7 +42,7 @@ function App() {
       .catch(console.log)
   }
 
-  function handleRmEnlisted(id) {
+  function handleRemoveEnlisted(id) {
     setBotArmy(army => army.filter(b => b.id !== id))
   }
 
@@ -65,14 +65,14 @@ function App() {
         selectedBot ?
           <BotSpecs handleGoBack={handleGoBack} bot={selectedBot}
             handleEnlist={handleEnlist}
-            handleDelete={handleDelete}
+            handleRetire={handleRetire}
           /> :
           <>
             <YourBotArmy botArmy={botArmy}
-              onRemoveBot={handleRmEnlisted}
+              onRemoveBot={handleRemoveEnlisted}
             />
             <SortBar onSort={handleSort} activeSort={sortBy} />
-            <BotCollection onRetireBot={handleDelete} bots={botsDisplay} onDisplayBotInfo={handleDisplayInfo} />
+            <BotCollection onRetireBot={handleRetire} bots={botsDisplay} onDisplayBotInfo={handleDisplayBotInfo} />
           </>
       }
     </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-function BotCollection() {
+function SortBar() {
   return (
     <div>
       
@@ -8,4 +8,4 @@ function BotCollection() {
   )
 }
 
-export default BotCollection
+export default SortBar
