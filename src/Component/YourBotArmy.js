@@ -8,7 +8,7 @@ const YourBotArmy = ({ army, onRelease, onDischarge }) => {
       {army.map((bot) => (
         <div key={bot.id}>
           <h3>{bot.name}</h3>
-          {/* Display other bot information */}
+         
           <button onClick={() => onRelease(bot)}>Release</button>
           <button onClick={() => onDischarge(bot)}>Discharge</button>
         </div>

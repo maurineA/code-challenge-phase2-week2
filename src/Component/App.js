@@ -1,23 +1,23 @@
 // App.js
 import React, { useState } from 'react';
-import BotCollection from './components/BotCollection';
-import YourBotArmy from './components/YourBotArmy';
+import BotCollection from './BotCollection';
+import YourBotArmy from './YourBotArmy';
 
 function App() {
   const [yourBotArmy, setYourBotArmy] = useState([]);
 
   const enlistBot = (bot) => {
-    // Enlist the bot into your army
+    // Enlist the bot 
     setYourBotArmy([...yourBotArmy, bot]);
   };
 
   const releaseBot = (bot) => {
-    // Release the bot from your army
+    // Release the bot 
     setYourBotArmy(yourBotArmy.filter((b) => b.id !== bot.id));
   };
 
   const dischargeBot = (bot) => {
-    // Discharge the bot from your army (and also delete from the server)
+    // Discharge the bot 
     fetch(`http://localhost:3000/bots/${bot.id}`, {
       method: 'DELETE',
     })

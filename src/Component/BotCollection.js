@@ -17,7 +17,7 @@ const BotCollection = ({ onEnlist }) => {
       {bots.map((bot) => (
         <div key={bot.id}>
           <h3>{bot.name}</h3>
-          {/* Display other bot information */}
+          
           <button onClick={() => onEnlist(bot)}>Enlist</button>
         </div>
       ))}
