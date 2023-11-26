@@ -1,38 +1,39 @@
-// App.js
-import React, { useState } from 'react';
+
 import BotCollection from './BotCollection';
-import YourBotArmy from './YourBotArmy';
+import { useState, useEffect } from 'react';
+
+
 
 function App() {
-  const [yourBotArmy, setYourBotArmy] = useState([]);
+  
+  const [data, setData] = useState([])
 
-  const enlistBot = (bot) => {
-    // Enlist the bot 
-    setYourBotArmy([...yourBotArmy, bot]);
-  };
-
-  const releaseBot = (bot) => {
-    // Release the bot 
-    setYourBotArmy(yourBotArmy.filter((b) => b.id !== bot.id));
-  };
-
-  const dischargeBot = (bot) => {
-    // Discharge the bot 
-    fetch(`http://localhost:3000/bots/${bot.id}`, {
-      method: 'DELETE',
+  function handleDelete(bot){
+    alert("Deleted")
+   
+    fetch(`http://localhost:8001/bots/${bot.id}` , {
+        method :"DELETE",
+        headers : {
+            "content-Type" : "application/json"
+        }
     })
-      .then(() => setYourBotArmy(yourBotArmy.filter((b) => b.id !== bot.id)))
-      .catch((error) => console.error('Error discharging bot:', error));
-  };
+   setData(data)
+ }
+
+useEffect( () => {
+  fetch(`https://bot-battlr-json.onrender.com/bots`)
+    .then(r => r.json())
+    .then(data => setData(data))
+
+
+},[] )
+if (!data) return <h1>Loading...</h1>
 
   return (
-    <div>
-      <BotCollection onEnlist={enlistBot} />
-      <YourBotArmy
-        army={yourBotArmy}
-        onRelease={releaseBot}
-        onDischarge={dischargeBot}
-      />
+    <div className="App">
+     <h1>My Bot Army</h1>
+      <BotCollection handleDelete={handleDelete} onSetData={setData} data={data} />
+     
     </div>
   );
 }

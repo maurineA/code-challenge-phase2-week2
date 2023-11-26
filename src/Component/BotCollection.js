@@ -1,28 +1,42 @@
-// components/BotCollection.js
-import React, { useState, useEffect } from 'react';
+import React  , {useState} from 'react'
+import YourBotArmy from './YourBotArmy'
+import CardComponent from './CardComponent'
 
-const BotCollection = ({ onEnlist }) => {
-  const [bots, setBots] = useState([]);
 
-  useEffect(() => {
-    // Fetch data from the server
-    fetch('http://localhost:3000/bots')
-      .then((response) => response.json())
-      .then((data) => setBots(data));
-  }, []);
+function BotCollection({data,handleDelete}) {
+
+const [clickBot, setClickBot]= useState([])
+
+function handleClick(bot){
+
+  setClickBot(datas => {
+   if(!datas.find(news => news.id ===bot.id)){
+     return [...clickBot,bot]
+   } 
+   return clickBot
+  })
+  
+   
+}
 
   return (
-    <div>
-      <h2>Bot Collection</h2>
-      {bots.map((bot) => (
-        <div key={bot.id}>
-          <h3>{bot.name}</h3>
-          
-          <button onClick={() => onEnlist(bot)}>Enlist</button>
-        </div>
-      ))}
-    </div>
-  );
-};
+    <div   id='main-card' >
+        <YourBotArmy onSet={setClickBot} onHandleDelete={handleClick}   clickBot={clickBot} />
+        <h2>Bot Collection</h2>
+        <div className="card-wrapper">
+        {data.map( bot => {
+         return (
+           <CardComponent onHandleDelete={handleDelete} key={bot.id} bot={bot} onHandleClick={handleClick}/>
 
-export default BotCollection;
+        )})}
+      </div>
+    </div>
+
+
+                  
+           
+            )}
+  
+
+
+export default BotCollection

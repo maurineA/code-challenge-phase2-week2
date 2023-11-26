@@ -7,7 +7,74 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.bot {
+  font-family: 'Roboto';
+  font-weight: 100;
+  font-size: 12px;
+  padding-top: 10px;
+  line-height: 2;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.click-card {
+  position :relative;
+  max-width: 300px;
+  background-color: #FEEFDE;
+  border-radius: 8px;
+  overflow: hidden;
+  padding-bottom: 10px;
+  box-shadow: 1px 2px 8px rgba(87, 86, 86, 0.1);
+ 
+}
+
+
+.card-wrapper {
+  padding: 2%;
+  columns: 5;
+
+}
+
+.heading {
+  font-family: '';
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+
+.card-wrapper .card{
+  margin: 4px auto;
+ 
+}
+
+
+
+.image-wrapper {
+  background-color: rgb(59, 58, 58);
+  width: auto;
+  height: 300px;
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+
+
+button{
+  background-color: red;
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+  color: aliceblue;
+}
+
+

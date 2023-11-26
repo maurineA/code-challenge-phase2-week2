@@ -1,20 +1,25 @@
-// components/YourBotArmy.js
-import React from 'react';
+import React from 'react'
+import CardComponent from './CardComponent'
 
-const YourBotArmy = ({ army, onRelease, onDischarge }) => {
+function YourBotArmy({clickBot,onSet,onHandleDelete}) {
+  
+  function handleDelete(data){
+   
+    let filterd=clickBot.filter(datas => data !==datas)
+   
+    onSet(filterd)
+
+  }
+  let mapedOver = clickBot.map(data =>  <CardComponent onHandleDelete={onHandleDelete}  key={data.id} onHandleClick={ () => handleDelete(data)}  bot={data} />)
+
+
   return (
-    <div>
-      <h2>Your Bot Army</h2>
-      {army.map((bot) => (
-        <div key={bot.id}>
-          <h3>{bot.name}</h3>
-         
-          <button onClick={() => onRelease(bot)}>Release</button>
-          <button onClick={() => onDischarge(bot)}>Discharge</button>
-        </div>
-      ))}
+    <div  className="card-wrapper">
+    {clickBot =='' ? <p>No Bot added, click on the bot image to add into the army </p> : mapedOver } 
+  
+    
     </div>
-  );
-};
+  )
+}
 
-export default YourBotArmy;
+export default YourBotArmy
