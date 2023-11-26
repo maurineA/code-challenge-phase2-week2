@@ -31,7 +31,7 @@ if (!data) return <h1>Loading</h1>
 
   return (
     <div className="App">
-     <h1>My Bot Army</h1>
+     <h1>The Army Collection</h1>
       <BotCollection handleDelete={handleDelete} onSetData={setData} data={data} />
      
     </div>
