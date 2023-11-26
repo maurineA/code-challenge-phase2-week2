@@ -71,6 +71,9 @@ img {
 
 button{
   background-color: rgb(71, 5, 5);
+  width: 100px;
+  margin-right: auto;
+  margin-left: auto;
   color: white;
   border: none;
   border-radius: 3px;

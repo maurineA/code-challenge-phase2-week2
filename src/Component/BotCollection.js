@@ -22,7 +22,7 @@ function handleClick(bot){
   return (
     <div   id='main-card' >
         <YourBotArmy onSet={setClickBot} onHandleDelete={handleClick}   clickBot={clickBot} />
-        <h2>Bot Collection</h2>
+        <h2>List of Bots</h2>
         <div className="card-wrapper">
         {data.map( bot => {
          return (
