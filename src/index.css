@@ -20,14 +20,21 @@ code {
     monospace;
 }
 
+.heading {
+  font-family: '';
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1;
+}
+
 .click-card {
   position :relative;
   max-width: 300px;
-  background-color: #FEEFDE;
   border-radius: 8px;
   overflow: hidden;
-  padding-bottom: 10px;
   box-shadow: 1px 2px 8px rgba(87, 86, 86, 0.1);
+  background-color: #FEEFDE;
+  padding-bottom: 10px;
  
 }
 
@@ -38,12 +45,6 @@ code {
 
 }
 
-.heading {
-  font-family: '';
-  font-size: 36px;
-  font-weight: 500;
-  line-height: 1;
-}
 
 
 .card-wrapper .card{
@@ -54,27 +55,28 @@ code {
 
 
 .image-wrapper {
-  background-color: rgb(59, 58, 58);
-  width: auto;
+  background-color: rgb(95, 94, 94);
   height: 300px;
+  width: auto;
   overflow: hidden;
 }
 
 img {
   max-width: 100%;
   height: auto;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
 }
 
 
 
 button{
   background-color: red;
-  padding: 5px;
+  color: white;
   border: none;
   border-radius: 3px;
-  color: aliceblue;
+  padding: 5px;
+  
 }
 
 
