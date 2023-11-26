@@ -1,6 +1,6 @@
 # CODE-CHALLENGE-PHASE2-WEEK3
 
-Is a React application that allow users to browse through a list of robots, view a robot's details, and, enlist a bot into their army, NOVEMBER 13/2023
+Is a React application that allow users to browse through a list of robots, view a robot's details, and, enlist a bot into their army, NOVEMBER 26/2023
 
 By Maurine Wambui
 
