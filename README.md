@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# CODE-CHALLENGE-PHASE2-WEEK3
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Is a React application that allow users to browse through a list of robots, view a robot's details, and, enlist a bot into their army, NOVEMBER 13/2023
 
-## Available Scripts
+By Maurine Wambui
 
-In the project directory, you can run:
+# Description
 
-### `npm start`
+Is a React application that allow users to browse through a list of robots, view a robot's details, and, enlist a bot into their army
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# How to Use
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<ul>
+<li>use this link https://maurinea.github.io/code-challenge-phase2-week2/</li>
+<li>The user is able to view the bots and their details</li>
+<li>The user is able to add a bot to the army collection by clicking the bot image</li>
+<li>The user is able to delete the bot from the server and the army</li>
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+</ul>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Requirements
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<ul>
+<li>A computer with npm terminal, a bash terminal and node installed.</li>
+<li>Access to the internet.</li>
+</ul>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Installation Process
 
-### `npm run eject`
+<ul>
+<li>Run https://maurinea.github.io/code-challenge-phase2-week2/  or<li>
+<li>Clone this repository using
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  git clone https://github.com/maurineA/code-challenge-phase2-week2/
+or by downloading a ZIP file of the code.</li>
+<li>The repository, if downloaded as a .zip file will need to be extracted to your preferred location.</li>
+<li>Navigate to the project folder on your bash terminal.</li>
+<li>Start the json server json-server --watch db.json --port 8001</li>
+<li>Start the server npm start</li>
+</ul>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  # Technologies Used
+<ul>
+<li>REACT</li>
+<li>JSX</li>
+<li>Node Runtime Environment</li>
+</ul>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Support and Contact Details
 
-## Learn More
+Incase of any query, need for collaboration or issues with this code, feel free to reach me at maurine.wambui@student.moringaschool.com
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+MIT License
 
-### Code Splitting
+Copyright © 2023 Maurine Wambui 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-### Analyzing the Bundle Size
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
