@@ -15,7 +15,7 @@ function YourBotArmy({clickBot,onSet,onHandleDelete}) {
 
   return (
     <div  className="card-wrapper">
-    {clickBot =='' ? <p>No Bot added, click on the bot image to add into the army </p> : mapedOver } 
+    {clickBot =='' ? <p>Click on the bot image to add into the army </p> : mapedOver } 
   
     
     </div>

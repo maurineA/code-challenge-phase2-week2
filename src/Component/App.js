@@ -9,9 +9,9 @@ function App() {
   const [data, setData] = useState([])
 
   function handleDelete(bot){
-    alert("Deleted")
    
-    fetch(`http://localhost:8001/bots/${bot.id}` , {
+   
+    fetch(`https://bot-server-lx36.onrender.com/bots/${bot.id}` , {
         method :"DELETE",
         headers : {
             "content-Type" : "application/json"
@@ -21,13 +21,13 @@ function App() {
  }
 
 useEffect( () => {
-  fetch(`https://bot-battlr-json.onrender.com/bots`)
-    .then(r => r.json())
+  fetch(`https://bot-server-lx36.onrender.com/bots`)
+    .then(res => res.json())
     .then(data => setData(data))
 
 
 },[] )
-if (!data) return <h1>Loading...</h1>
+if (!data) return <h1>Loading</h1>
 
   return (
     <div className="App">
